@@ -56,3 +56,5 @@ Specifically:
 * Code that was written to pull links from web pages: [LinkRipper](https://github.com/aarno97/JackalopeSearchEngine/blob/master/LinkRipper/LinkRipper.py) 
 
 BeautifulSoup also has really great documentation to help you learn how to do this yourself!
+
+# Future stuff will be added below this marker. 
