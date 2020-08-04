@@ -57,4 +57,10 @@ Specifically:
 
 BeautifulSoup also has really great documentation to help you learn how to do this yourself!
 
+## To keep an eye on prices of items at [Amazon](smile.amazon.com)
+
+I have recently added a new project called [PriceChecker-GitHubVersion](www.google.com). 
+
+This project simply needs to be updated in a few spots and you'll be able to run a simple script to find and receive an email when a price drops during a search. 
+
 # Future stuff will be added below this marker. 
