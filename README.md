@@ -57,10 +57,18 @@ Specifically:
 
 BeautifulSoup also has really great documentation to help you learn how to do this yourself!
 
-## To keep an eye on prices of items at [Amazon](smile.amazon.com)
+## To keep an eye on prices of items at [Amazon](https://smile.amazon.com)
 
-I have recently added a new project called [PriceChecker-GitHubVersion](www.google.com). 
+I have recently added a new project called [PriceChecker-GitHubVersion](https://github.com/aarno97/Code_Snippets/tree/master/PriceChecker-GitHubVersion). 
 
-This project simply needs to be updated in a few spots and you'll be able to run a simple script to find and receive an email when a price drops during a search. 
+This project simply needs to be updated in a few spots and you'll be able to run a simple script to find and receive an email when a price drops during a search.
+
+1. At line 48, enter the email to your gmail account that you can sign into. 
+2. At line 49, enter an app-specific password so that your project can login. 
+3. At line 51, write the email for the email address you are wanting to send it to and the email address it is coming from. 
+4. At line 57, you will see the dictionary for items you are monitoring. 
+    * insert the url and original price of the item (or the price you are wanting it to drop below) in the correct format
+
+After that, you're all set! You can use a scheduler if your computer is always-on to run the script at specified intervals!  
 
 # Future stuff will be added below this marker. 
