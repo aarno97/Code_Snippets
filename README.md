@@ -59,6 +59,11 @@ BeautifulSoup also has really great documentation to help you learn how to do th
 
 ## To keep an eye on prices of items at [Amazon](https://smile.amazon.com)
 
+##### You will need to have installed [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) and [requests](https://requests.readthedocs.io/en/master/) to run this project: 
+```shell script
+pip3 install bs4 requests
+``` 
+
 I have recently added a new project called [PriceChecker-GitHubVersion](https://github.com/aarno97/Code_Snippets/tree/master/PriceChecker-GitHubVersion). 
 
 This project simply needs to be updated in a few spots and you'll be able to run a simple script to find and receive an email when a price drops during a search.
