@@ -9,41 +9,57 @@ What HomeBrew says to do:
 ```
 
 What I did before finding their website :laugh: 
-```/usr/bin/ruby -e "$(curl -fsSL https:/raw.githubusercontent.com/Homebrew/install/master/install)"```
+```
+/usr/bin/ruby -e "$(curl -fsSL https:/raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 ## Downloading and Converting different movie formats 
 
 Utilizing [FFMPEG](https://www.ffmpeg.org):
 
-```brew install ffmpeg```
+```
+brew install ffmpeg
+```
 
 To convert, for instance, an mkv to an mp4:
 
-```ffmpeg -i example.mkv -c copy example.mp4```
+```
+ffmpeg -i example.mkv -c copy example.mp4
+```
 
 To convert, for instance, an webm file from a url to an mp4: 
 
-```ffmpeg -i url<ending in .webm> name.mp4``` (Conversion is saved in current folder) 
+```
+ffmpeg -i url<ending in .webm> name.mp4 (Conversion is saved in current folder)
+```
 
 ## Converting images between weird icon formats (Specifically SVG)
 
 Utilizing [librsvg](https://en.wikipedia.org/wiki/Librsvg):
 
-```brew install librsvg```
+```
+brew install librsvg
+```
 
 To convert (where # indicates the height of the produced image, width is determined automatically) 
 
-```rsvg-convert -h # icon.svg > icon.png```
+```
+rsvg-convert -h # icon.svg > icon.png
+```
 
 ## To download videos from a website
 
 Utilizing [Youtube-DL](https://ytdl-org.github.io/youtube-dl/index.html): 
 
-```brew install youtube-dl```
+```
+brew install youtube-dl
+```
 
 To download the video: 
 
-```youtube-dl url```
+```
+youtube-dl url
+```
 
 ## To parse HTML pages 
 
