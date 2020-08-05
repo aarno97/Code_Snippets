@@ -62,7 +62,7 @@ BeautifulSoup also has really great documentation to help you learn how to do th
 ## To keep an eye on prices of items at [Amazon](https://smile.amazon.com)
 
 ##### You will need to have installed [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) and [requests](https://requests.readthedocs.io/en/master/) to run this project: 
-```shell script
+```
 pip3 install bs4 requests
 ``` 
 
