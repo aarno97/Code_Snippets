@@ -4,10 +4,14 @@ This is just a list of interesting code snippets I've found and used. Unless oth
 ## A lot of these utilize libraries downloaded from [HomeBrew](https://brew.sh), so install that first. 
 
 What HomeBrew says to do: 
-``` /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" ```
+```shell script
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
+```
 
 What I did before finding their website :laugh: 
-```/usr/bin/ruby -e "$(curl -fsSL https:/raw.githubusercontent.com/Homebrew/install/master/install)"```
+```shell script
+/usr/bin/ruby -e "$(curl -fsSL https:/raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 ## Downloading and Converting different movie formats 
 
@@ -19,31 +23,44 @@ brew install ffmpeg
 
 To convert, for instance, an mkv to an mp4:
 
-```ffmpeg -i example.mkv -c copy example.mp4```
+```shell script
+ffmpeg -i example.mkv -c copy example.mp4
+```
 
 To convert, for instance, an webm file from a url to an mp4: 
 
-```ffmpeg -i url<ending in .webm> name.mp4``` (Conversion is saved in current folder) 
+```shell script
+ffmpeg -i url<ending in .webm> name.mp4
+``` 
+(Conversion is saved in current folder) 
 
 ## Converting images between weird icon formats (Specifically SVG)
 
 Utilizing [librsvg](https://en.wikipedia.org/wiki/Librsvg):
 
-```brew install librsvg```
+```shell script
+brew install librsvg
+```
 
 To convert (where # indicates the height of the produced image, width is determined automatically) 
 
-```rsvg-convert -h # icon.svg > icon.png```
+```shell script
+rsvg-convert -h # icon.svg > icon.png
+```
 
 ## To download videos from a website
 
 Utilizing [Youtube-DL](https://ytdl-org.github.io/youtube-dl/index.html): 
 
-```brew install youtube-dl```
+```shell script
+brew install youtube-dl
+```
 
 To download the video: 
 
-```youtube-dl url```
+```shell script
+youtube-dl url
+```
 
 ## To parse HTML pages 
 
