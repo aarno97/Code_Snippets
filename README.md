@@ -13,7 +13,9 @@ What I did before finding their website :laugh:
 
 Utilizing [FFMPEG](https://www.ffmpeg.org):
 
-```brew install ffmpeg```
+```shell script
+brew install ffmpeg
+```
 
 To convert, for instance, an mkv to an mp4:
 
@@ -45,7 +47,7 @@ To download the video:
 
 ## To parse HTML pages 
 
-Checkout [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)! I used them for my senior project. You can find some examples from the GitHub project from the project: [JackalopeSearchEngine](https://github.com/aarno97/JackalopeSearchEngine). 
+Checkout [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)! I used them for my senior project. You can find some examples from the GitHub project: [JackalopeSearchEngine](https://github.com/aarno97/JackalopeSearchEngine). 
 
 Specifically: 
 
