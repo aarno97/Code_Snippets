@@ -94,4 +94,34 @@ This project simply needs to be updated in a few spots and you'll be able to run
 
 After that, you're all set! You can use a scheduler if your computer is always-on to run the script at specified intervals!  
 
+## To use sherlock to find and open your user accounts
+
+#### For reference I found this very useful to find a lot of records regarding your own usernames and decided to share how to do so 
+
+I have uploaded a file called finder.sh this is a shell script that will take in an argument (a single username, feel free to update to where you could pass in multiple usernames at once) using the [sherlock](https://github.com/sherlock-project/sherlock) library. 
+
+1. To begin follow the instructions using the above link to clone sherlock to your personal computer. I cloned mine into: 
+
+    ```
+    ~/Documents/GitHub/
+    ```
+
+2. Download the **finder.sh** file or just clone this entire repository: 
+    
+   ```
+   git clone https://github.com/aarno97/Code_Snippets.git
+   ```
+   
+3. In the **finder.sh** file change:
+ 
+    a. (line 2) to `cd path/of/sherlock-repository`
+    
+4. I created an alias in **.zshrc** that allowed me to run the script from anywhere: 
+
+    ```
+   alias sherlock='cd /path/to/finder.sh && bash finder.sh'
+   ```
+
+Using this method you will be able to quickly call sherlock by `sherlock username` from anywhere and the returned list of URLs from Sherlock will all instantly open. 
+
 # Future stuff will be added below this marker. 
