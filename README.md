@@ -124,4 +124,38 @@ I have uploaded a file called finder.sh this is a shell script that will take in
 
 Using this method you will be able to quickly call sherlock by `sherlock username` from anywhere and the returned list of URLs from Sherlock will all instantly open. 
 
+## To color your zsh shell
+
+Some helpful examples can be found [here](https://blog.balthazar-rouberol.com/customizing-your-shell) and [here](https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/).
+
+I've added the code needed to get a simple colored zsh shell (Showing the Apple Unicode symbol and your name in cyan, path in purple) in a file called **.zshrc**
+
+The simple way to do this would be to add all the color stuff (up to line 42) and just change line 44
+
+Using [Visual Studios Code](https://code.visualstudio.com) or Vim or whatever, open the .zshrc file:
+
+```
+code ~/.zshrc
+```
+
+Add the entire contents of the supplied .zshrc file in and on line 42 change: 
+
+```
+export PROMPT='%F{cyan} Aaron%f%F{blue} 🏡 %~ ➤ %f'
+```
+
+To: 
+
+```
+export PROMPT='%F{COLOR} NAME%f%F{COLOR} 🏡 %~ ➤ %f'
+```
+
+The text inside each %F and %f will be the specified color. 
+
+They accept a multitude of colors (red, purple, yellow, cyan, etc.)
+
+It accepts unicode symbols that are available on your machine, if you don't see the Apple symbol, your machine doesn't support it and probably shows an empty box. 
+
+The %~ specifies the directory you are in, and check the [first link](https://blog.balthazar-rouberol.com/customizing-your-shell) for more options. 
+
 # Future stuff will be added below this marker. 
