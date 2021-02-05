@@ -158,4 +158,22 @@ It accepts unicode symbols that are available on your machine, if you don't see 
 
 The %~ specifies the directory you are in, and check the [first link](https://blog.balthazar-rouberol.com/customizing-your-shell) for more options. 
 
+### Data Science Applications -- Serial Killers
+
+Decided to look into specific numbers of active serial killers via decade after reading this [Why were there so many serial killers in the 1980s? - BBC News](https://www.bbc.com/news/world-us-canada-45324622) and decided to add some files on usage
+
+To begin, I downloaded a .csv file containing all the data available on [List of serial killers in the United States - Wikipedia](https://en.wikipedia.org/wiki/List_of_serial_killers_in_the_United_States) using [Wiki Table to CSV online converter](https://wikitable2csv.ggor.de/)
+
+I then used pyplot to get basic histograms displaying years active from, and years active to after scrubbing the data manually.
+
+Then using a dictionary containing decades I wanted to look at, and creating a function called find_decade, I cycled through each record adding each decade a person was active to a set (to prevent duplication) and then incremented appropriately. 
+
+Further applications could be made with more in-depth data science, as well as looking at other things you'd like to have data regarding activity across decades such as: 
+
+[Lists of Pokémon episodes - Wikipedia](https://en.wikipedia.org/wiki/Lists_of_Pok%C3%A9mon_episodes) -- seeing overlap of dates in media production
+
+[List of current monarchs of sovereign states - Wikipedia](https://en.wikipedia.org/wiki/List_of_current_monarchs_of_sovereign_states) -- seeing years of greatest over turn on monarchs
+
+
+
 # Future stuff will be added below this marker. 
