@@ -8,11 +8,6 @@ What HomeBrew says to do:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 ```
 
-What I did before finding their website :laugh: 
-```
-/usr/bin/ruby -e "$(curl -fsSL https:/raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
 ## Downloading and Converting different movie formats 
 
 Utilizing [FFMPEG](https://www.ffmpeg.org):
