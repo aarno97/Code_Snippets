@@ -42,6 +42,12 @@ To convert (where # indicates the height of the produced image, width is determi
 rsvg-convert -h # icon.svg > icon.png
 ```
 
+### To just change an images size from terminal 
+
+```
+convert myfigure.png -resize #x# myfigure.jpg 
+```
+
 ## To download videos from a website
 
 Utilizing [Youtube-DL](https://ytdl-org.github.io/youtube-dl/index.html): 
