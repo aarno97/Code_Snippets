@@ -28,6 +28,12 @@ To convert, for instance, an webm file from a url to an mp4:
 ffmpeg -i url<ending in .webm> name.mp4 (Conversion is saved in current folder)
 ```
 
+To make sure that the converted files can play in things like Mac quick Preview you have to append `-pix_fmt yuv420p` to the previous command:
+
+```
+ffmpeg -i example.webm -pix_fmt yuv420p example.mp4
+```
+
 ## Converting images between weird icon formats (Specifically SVG)
 
 Utilizing [librsvg](https://en.wikipedia.org/wiki/Librsvg):
