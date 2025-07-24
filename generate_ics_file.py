@@ -1,4 +1,5 @@
 from datetime import datetime
+
 from ics import Calendar, Event
 
 # Create a calendar instance

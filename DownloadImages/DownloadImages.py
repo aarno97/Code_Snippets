@@ -45,4 +45,3 @@ for newImage in listOfImages:
     urllib.request.urlretrieve(newImage, full_path)
     print("Downloaded: " + full_path)
     i = i + 1
-    

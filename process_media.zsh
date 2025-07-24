@@ -17,10 +17,10 @@ mkdir -p "$image_directory" "$video_directory" "$gif_directory"
 # Function to initialize counter based on the highest filename number in a directory
 init_counter() {
   local directory=$1
-  
+
   # Get the highest numbered filename in the directory, adding 1 for the next file
   local next_num=$(ls $directory | awk -F '.' '{print $1}' | sort -nr | head -n1)
-  
+
   # If no files are found, start from 1; otherwise, increment the highest number found
   if [[ -z "$next_num" ]]; then
     echo 1
@@ -45,21 +45,21 @@ process_and_move_files() {
     local extension_lower=$(echo "$extension" | tr '[:upper:]' '[:lower:]')
 
     case $extension_lower in
-      jpg|jpeg|png|tif|tiff|bmp)
-        local target="${image_directory}/${image_counter}.jpg"
-        convert "$file" "$target"
-        ((image_counter++))
-        ;;
-      mp4|mov|avi|mkv|webm)
-        local target="${video_directory}/${video_counter}.mp4"
-        ffmpeg -i "$file" -c:v libx264 -pix_fmt yuv420p -preset slow -crf 22 -c:a aac -b:a 128k "$target"
-        ((video_counter++))
-        ;;
-      gif)
-        local target="${gif_directory}/${gif_counter}.gif"
-        mv "$file" "$target"
-        ((gif_counter++))
-        ;;
+    jpg | jpeg | png | tif | tiff | bmp) 
+      local target="${image_directory}/${image_counter}.jpg"
+      convert "$file" "$target"
+      ((image_counter++))
+      ;; 
+    mp4 | mov | avi | mkv | webm) 
+      local target="${video_directory}/${video_counter}.mp4"
+      ffmpeg -i "$file" -c:v libx264 -pix_fmt yuv420p -preset slow -crf 22 -c:a aac -b:a 128k "$target"
+      ((video_counter++))
+      ;; 
+    gif) 
+      local target="${gif_directory}/${gif_counter}.gif"
+      mv "$file" "$target"
+      ((gif_counter++))
+      ;; 
     esac
 
     # Optionally, remove the original file after processing
